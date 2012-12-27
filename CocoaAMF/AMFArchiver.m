@@ -164,7 +164,7 @@ static uint16_t g_options = 0;
 	if (codedName == nil)
 		[m_registeredClasses removeObjectForKey:cls];
 	else
-		[m_registeredClasses setObject:codedName forKey:cls];
+		[m_registeredClasses setObject:codedName forKey:(id)cls];
 }
 
 + (void)setClassName:(NSString *)codedName forClass:(Class)cls{
@@ -172,7 +172,7 @@ static uint16_t g_options = 0;
 	if (codedName == nil)
 		[g_registeredClasses removeObjectForKey:cls];
 	else
-		[g_registeredClasses setObject:codedName forKey:cls];
+		[g_registeredClasses setObject:codedName forKey:(id)cls];
 }
 
 - (NSString *)classNameForClass:(Class)cls{

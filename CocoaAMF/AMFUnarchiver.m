@@ -1040,7 +1040,7 @@ static uint16_t g_options = 0;
 }
 
 - (NSString *)description{
-	return [NSString stringWithFormat:@"<%@ = 0x%08X | className: %@ | dynamic: %d \
+	return [NSString stringWithFormat:@"<%@ = 0x%08lX | className: %@ | dynamic: %d \
 | externalizable: %d | count: %d>", 
 		[self class], (long)self, m_className, m_dynamic, m_externalizable, m_count];
 }
